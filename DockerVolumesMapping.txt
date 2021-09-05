@@ -1,0 +1,14 @@
+-sudo su
+-docker ps
+-docker images
+-ll /tmp
+-docker pull ubuntu:latest
+-docker ps
+-docker images
+-ll /opt/data
+-cp /tmp/sample.txt /opt/data
+-ll /opt/data
+-docker run --name ecommerce -v /opt/data:/tmp -d -it ubuntu:latest
+-docker ps
+-docker exec -it ContainerID /bin/bash
+-ll /tmp/
